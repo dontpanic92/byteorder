@@ -70,6 +70,8 @@ cases.
 #![deny(missing_docs)]
 #![cfg_attr(not(feature = "std"), no_std)]
 
+extern crate alloc;
+
 use core::{
     convert::TryInto, fmt::Debug, hash::Hash, ptr::copy_nonoverlapping, slice,
 };
